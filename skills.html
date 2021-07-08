@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Skills</title>
+    <style>
+        body {
+            background-image: url(img/bgimg1.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
+
+        #img1 {
+            float: left;
+            position: fixed;
+            width: 40%;
+        }
+
+        #img2 {
+            position: fixed;
+            width: 30%;
+        }
+
+        #img3 {
+            position: fixed;
+            width: 52%;
+            left: 40%;
+            top: 15%;
+        }
+
+        #img6 {
+            position: fixed;
+            width: 3%;
+            left: 30%;
+        }
+
+        .txt {
+            position: fixed;
+            left: 44%;
+            top: 67%;
+        }
+
+        p {
+            color: rgb(75, 32, 32);
+            font-size: 130%;
+            font-family: 'Times New Roman', Times, serif;
+            width: 80%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 2px 2px;
+        }
+
+        li {
+            float: right;
+            margin-right: 15px;
+            background-color: rgb(255, 250, 250, 0.7);
+            border: 4px;
+            padding: 2px;
+            border-radius: 7px;
+        }
+
+        li a {
+            color: rgb(75, 32, 32);
+            font-size: 110%;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            color: #ff7f50;
+        }
+
+        #img7 {
+            position: fixed;
+            width: 17%;
+            left: 45%;
+            top: 24%;
+        }
+
+        #img8 {
+            position: fixed;
+            width: 15%;
+            left: 67%;
+            top: 23%;
+        }
+
+        #img9 {
+            position: fixed;
+            width: 15%;
+            left: 67%;
+            top: 47%;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/green.png" id="img2" alt="">
+    <img src="img/MyResume.png" id="img1" alt="">
+    <img src="img/paper.png" id="img3" alt="">
+    <a href="myResume.html"><img src="img/home.png" id="img6" alt=""></a>
+    <!--点击后跳转至主页面-->
+    <div class="txt">
+        <p>证书：英语四级证书、英语六级证书、办公软件高级应用二级证书、三等奖学金证书等。</p>
+    </div>
+    <img src="img/cet6.jpg" id="img7" alt="">
+    <img src="img/jsj2.jpg" id="img8" alt="">
+    <img src="img/scolar.jpg" id="img9" alt="">
+    <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+    <script>
+        var homebutton = document.getElementById('img6');
+        homebutton.onmouseover = function () {
+            homebutton.src = "img/home2.png";
+            homebutton.onmouseout = function () {
+                homebutton.src = "img/home.png";
+            }
+        }//鼠标经过home图标时，图片变为home2.png，移出时再变回home.png
+    </script>
+</body>
+
+</html>

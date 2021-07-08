@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <style>
+        body {
+            background-image: url(img/bgimg1.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
+
+        #img1 {
+            float: left;
+            position: fixed;
+            width: 40%;
+        }
+
+        #img2 {
+            position: fixed;
+            width: 30%;
+        }
+
+        #img3 {
+            position: fixed;
+            width: 52%;
+            left: 40%;
+            top: 15%;
+        }
+
+        #img6 {
+            position: fixed;
+            width: 3%;
+            left: 30%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 2px 2px;
+        }
+
+        li {
+            float: right;
+            margin-right: 15px;
+            background-color: rgb(255, 250, 250, 0.7);
+            border: 4px;
+            padding: 2px;
+            border-radius: 7px;
+        }
+
+        li a {
+            color: rgb(75, 32, 32);
+            font-size: 110%;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            color: #ff7f50;
+        }
+
+        .circle {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgb(40, 49, 22);
+            top: 30%;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .circle:hover {
+            background-color: darkgoldenrod;
+            width: 300px;
+            height: 300px;
+        }
+
+        /*鼠标悬停时圆圈放大并改变颜色*/
+
+        #c1 {
+            left: 45%;
+        }
+
+        #c2 {
+            left: 60%;
+        }
+
+        #c3 {
+            left: 75%;
+        }
+
+        #img7 {
+            position: fixed;
+            width: 14%;
+            left: 44%;
+            top: 34%;
+            transition: all 0.4s ease-in-out;
+        }
+
+        #img7:hover {
+            width: 21%;
+        }
+
+        #img8 {
+            position: fixed;
+            width: 8%;
+            left: 61%;
+            top: 31%;
+            transition: all 0.4s ease-in-out;
+        }
+
+        #img8:hover {
+            width: 13%;
+        }
+
+
+        #img9 {
+            position: fixed;
+            width: 12%;
+            left: 75%;
+            top: 32%;
+            transition: all 0.4s ease-in-out;
+        }
+
+        #img9:hover {
+            width: 17%;
+        }
+
+        p {
+            display: none;
+            position: fixed;
+            color: rgb(75, 32, 32);
+            font-size: 350%;
+            font-family: 'Times New Roman', Times, serif;
+            top: 60%;
+        }
+
+        p.wechat{
+            left: 60%;
+        }
+
+        p.tel{
+            left: 59%;
+        }
+
+        p.email{
+            left: 54%;
+        }
+        #c1:hover p.wechat {
+            display: block;
+        }
+
+        #c2:hover p.tel {
+            display: block;
+        }
+
+        #c3:hover p.email {
+            display: block;
+        }
+        /*鼠标悬停在圆圈时，下方显示相关信息*/
+    </style>
+</head>
+
+<body>
+    <img src="img/green.png" id="img2" alt="">
+    <img src="img/MyResume.png" id="img1" alt="">
+    <img src="img/paper.png" id="img3" alt="">
+    <a href="myResume.html"><img src="img/home.png" id="img6" alt=""></a>
+    <!--点击后跳转至主页面-->
+
+    <div class="circle" id="c1">
+        <img src="img/WeChat.png" id="img7" alt="">
+        <p class="wechat">HQVil1025</p>
+    </div>
+    <div class="circle" id="c2">
+        <img src="img/Tel.png" id="img8" alt="">
+        <p class="tel">177****4877</p>
+    </div>
+    <div class="circle" id="c3">
+        <img src="img/Email.png" id="img9" alt="">
+        <p class="email">hqvil777@foxmail.com</p>
+    </div>
+
+    <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+    <script>
+        var homebutton = document.getElementById('img6');
+        homebutton.onmouseover = function () {
+            homebutton.src = "img/home2.png";
+            homebutton.onmouseout = function () {
+                homebutton.src = "img/home.png";
+            }
+        }//鼠标经过home图标时，图片变为home2.png，移出时再变回home.png
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ae</title>
+    <style>
+        body {
+            background-image: url(img/bgimg1.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
+
+        #img1 {
+            float: left;
+            position: fixed;
+            width: 40%;
+        }
+
+        #img2 {
+            position: fixed;
+            width: 30%;
+        }
+
+        #img3 {
+            position: fixed;
+            width: 52%;
+            left: 40%;
+            top: 15%;
+        }
+
+        #img4 {
+            position: fixed;
+            width: 3%;
+            left: 83%;
+            top: 73%;
+        }
+
+        /*video {
+            position: fixed;
+            width: 40%;
+            top: 28%;
+            left: 46%;
+        }*/
+
+        object{
+            position: fixed;
+            width: 40%;
+            height: 45%;
+            top: 28%;
+            left: 46%;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/green.png" id="img2" alt="">
+    <img src="img/MyResume.png" id="img1" alt="">
+    <img src="img/paper.png" id="img3" alt="">
+    <a href="portfolio.html"><img src="img/back.png" id="img4" alt=""></a>
+    <!--<video src="work/AE作品.mp4"></video>-->
+    <object data="work/AE作品.mp4" type=""></object>
+
+    <script>
+        var backbutton = document.getElementById('img4');
+        backbutton.onmouseover = function () {
+            backbutton.src = "img/back2.png";
+            backbutton.onmouseout = function () {
+                backbutton.src = "img/back.png";
+            }
+        }//鼠标经过back图标时，图片变为back2.png，移出时再变回back.png
+    </script>
+</body>
+
+</html>

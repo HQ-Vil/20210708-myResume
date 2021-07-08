@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-image: url(img/bgimg1.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
+
+        #img1 {
+            float: left;
+            position: fixed;
+            width: 40%;
+        }
+
+        #img2 {
+            position: fixed;
+            width: 30%;
+        }
+
+        #img3 {
+            position: fixed;
+            width: 52%;
+            left: 40%;
+            top: 15%;
+        }
+
+        #img6 {
+            position: fixed;
+            width: 3%;
+            left: 30%;
+        }
+
+        .lianjie {
+            position: fixed;
+            left: 60%;
+            top: 28%;
+        }
+
+
+        #nav {
+            list-style-type: none;
+            margin: 0px;
+            padding: 2px 2px;
+        }
+
+        #nav li {
+            float: right;
+            margin-right: 15px;
+            background-color: rgb(255, 250, 250, 0.7);
+            border: 4px;
+            padding: 2px;
+            border-radius: 7px;
+        }
+
+        #nav li a {
+            color: rgb(75, 32, 32);
+            font-size: 110%;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
+
+        #nav li a:hover {
+            color: #ff7f50;
+        }
+
+        .lianjie {
+            position: fixed;
+            left: 43%;
+            top: 30%;
+        }
+
+        .lianjie li {
+            font-size: 200%;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(75, 32, 32);
+            margin-top: 25%;
+        }
+
+        .lianjie li a {
+            color: rgb(75, 32, 32);
+            font-size: 110%;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
+
+        .lianjie li a:hover {
+            color: #ff7f50;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/green.png" id="img2" alt="">
+    <img src="img/MyResume.png" id="img1" alt="">
+    <img src="img/paper.png" id="img3" alt="">
+    <a href="myResume.html"><img src="img/home.png" id="img6" alt=""></a>
+    <!--点击后跳转至主页面-->
+    <div class="lianjie">
+        <ul>
+            <li><a href="ae.html">AE作品</a></li>
+            <li><a href="ps.html">PS作品</a></li>
+            <li><a href="dv.html">剪辑作品</a></li>
+        </ul>
+    </div>
+    <div id="myworks">
+
+    </div>
+    <ul id="nav">
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+    <script>
+        var homebutton = document.getElementById('img6');
+        homebutton.onmouseover = function () {
+            homebutton.src = "img/home2.png";
+            homebutton.onmouseout = function () {
+                homebutton.src = "img/home.png";
+            }
+        }//鼠标经过home图标时，图片变为home2.png，移出时再变回home.png
+    </script>
+</body>
+
+</html>

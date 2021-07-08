@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <style>
+        body {
+            background-image: url(img/bgimg1.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
+
+        #img1 {
+            float: left;
+            position: fixed;
+            width: 40%;
+        }
+
+        #img2 {
+            position: fixed;
+            width: 30%;
+        }
+
+        #img3 {
+            position: fixed;
+            width: 52%;
+            left: 40%;
+            top: 15%;
+        }
+
+        #img4 {
+            position: fixed;
+            width: 17%;
+            left: 43%;
+            top: 32%;
+        }
+
+        #img5 {
+            position: fixed;
+            width: 11%;
+            left: 47%;
+            top: 35%;
+        }
+
+        #img6 {
+            position: fixed;
+            width: 3%;
+            left: 30%;
+        }
+
+        .txt {
+            position: fixed;
+            left: 60%;
+            top: 28%;
+        }
+
+        h1 {
+            color: rgb(75, 32, 32);
+            font-size: 380%;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: rgb(75, 32, 32);
+            font-size: 130%;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 7px;
+            width: 70%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 2px 2px;
+        }
+
+        li {
+            float: right;
+            margin-right: 15px;
+            background-color: rgb(255, 250, 250, 0.7);
+            border: 4px;
+            padding: 2px;
+            border-radius: 7px;
+        }
+
+        li a {
+            color: rgb(75, 32, 32);
+            font-size: 110%;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            color: #ff7f50;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/green.png" id="img2" alt="">
+    <img src="img/MyResume.png" id="img1" alt="">
+    <img src="img/paper.png" id="img3" alt="">
+    <img src="img/flowerbird.png" id="img5" alt="">
+    <img src="img/inkBorder.png" id="img4" alt="">
+    <a href="myResume.html"><img src="img/home.png" id="img6" alt=""></a>
+    <!--点击后跳转至主页面-->
+    <div class="txt">
+        <h1>杨逸飞</h1>
+        <p>杭州电子科技大学，传播学（新媒体方向）专业，大二在读学生。</p>
+        <p>主修课程：新闻学、传播学原理、用户体验与交互设计、数字图像处理、影视后期制作、非线性编辑、网页设计与制作等。</p>
+
+    </div>
+    <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+    <script>
+        var homebutton = document.getElementById('img6');
+        homebutton.onmouseover = function () {
+            homebutton.src = "img/home2.png";
+            homebutton.onmouseout = function () {
+                homebutton.src = "img/home.png";
+            }
+        }//鼠标经过home图标时，图片变为home2.png，移出时再变回home.png
+    </script>
+</body>
+
+</html>
